@@ -1,0 +1,22 @@
+ 
+@import "../../all.scss" ;
+
+
+.navbar 
+{
+    background-color:$backgroundColor !important;
+    
+}
+.navbar a 
+{
+    color:$color;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 15px 25px;
+}
+
+.active 
+{
+    color:#555 !important;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+
+@import "../../all.scss";
+.home
+{
+    height:90vh;
+    background-image: url('../../assets/cover-2.jpg');
+    background-size:100% 100%;
+}
+
+h1,h3,p
+{
+    color:$color;
+
+}
+h1
+{
+    font-weight: 700;
+    font-size: 5em;
+    text-shadow: 0px 5px 10px #af2424;
+    margin-bottom: 0px;
+}
+p{
+    color: #af2424;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+a{
+    color:#fff;
+    border:1px solid #fff;
+}

@@ -1,0 +1,66 @@
+<div class="contact">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 text-center pb-5">
+                    <h2>CONTACT US</h2>
+                    <h3>Get in touch for more updates</h3>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-6 pt-5" >   
+                    <p>Drop us a email with your Gamer Nick and we will schedule your Live match with one of our clan member.</p>
+                    <p>Game On - GO PRO </p>
+                    <ul class="social_media list-unstyled">
+	                    	<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+	                    	<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+	                    	<li><a href="#" target="_blank"><i class="fab fa-google-plus"></i></a></li>
+	                    	<li><a href="#" target="_blank"><i class="fab fa-twitch"></i></a></li>
+	                    	<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+	                    	<li><a href="#" target="_blank"><i class="fab fa-vimeo"></i></a></li>
+	                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                        <form [formGroup]="myForm" class="form-email">
+	                            <div class="col-xs-12 col-sm-12 col-md-12">
+									<input 
+									required
+									minlength="3"
+									maxlength="10"
+									
+									formControlName="Name" type="text" name="Name" class="form-control" placeholder="Enter Name">
+									
+									<div *ngIf="myForm.controls.Name.touched && myForm.controls.Name.errors != null">
+										<div  *ngIf="myForm.controls.Name.errors.required"  class="alert alert-danger">user name is required!</div>
+										<div  *ngIf="myForm.controls.Name.errors.minlength"  class="alert alert-danger">min length is 3</div>
+                                    </div>
+
+
+								</div>
+	                            <div class="col-xs-12 col-sm-12 col-md-12">
+									<input
+									required
+	
+									formControlName="Email" type="email" name="Email" class="form-control" placeholder="Enter Email">
+									<div *ngIf="myForm.controls.Email.touched && myForm.controls.Email.errors != null">
+										<div  *ngIf="myForm.controls.Email.errors.required"  class="alert alert-danger">Email is required!</div>
+										<div  *ngIf="myForm.controls.Email.errors.minlength"  class="alert alert-danger">min length is 3</div>
+                                    </div>
+	                            </div>
+	                            <div class="col-sm-12 col-xs-12">
+	                                <textarea 	required
+									minlength="3"
+									maxlength="100"  formControlName="Message" rows="4" name="Message" class="form-control" placeholder="Enter Message"></textarea>
+									<div *ngIf="myForm.controls.Message.touched && myForm.controls.Message.errors != null">
+										<div  *ngIf="myForm.controls.Message.errors.required"  class="alert alert-danger">Message is required!</div>
+										<div  *ngIf="myForm.controls.Message.errors.minlength"  class="alert alert-danger">min length is 3</div>
+                                    </div>
+	                            </div>
+	                            <div class="col-sm-12 col-md-12 col-xs-12">
+	                                <button type="submit" class="btn">Submit</button>
+	                            </div>
+	                        </form>
+                </div>
+            </div>
+    </div>
+</div>

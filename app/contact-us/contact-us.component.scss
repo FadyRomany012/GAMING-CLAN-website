@@ -1,0 +1,71 @@
+.contact
+{
+    background-color: #1a1a1a;
+    color: #6a6a6a;
+}
+h2
+{
+    font-size: 42px;
+    font-weight: 700;
+}
+h3
+{
+    font-size: 24px;
+
+}
+
+.social_media li
+{
+    display: inline-block;
+    padding:5px;
+}
+
+.social_media li a
+{
+    color:#fff;
+    border:1px solid #6a6a6a ;
+        width:50px;
+        height:50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.social_media li a:hover 
+{
+
+    background-color: #ec3237;
+    border-color: #ec3237 ;
+}
+.form-control 
+{
+    border-radius: 0px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6a6a6a;
+    padding: 6px 12px;
+    
+
+}
+input::placeholder ,textarea::placeholder
+{
+    color: #555;
+}
+button
+{
+    padding: 10px 28px;
+    margin: 15px 0px;
+    color:#fff;
+    border: 1px solid #6a6a6a;
+
+}
+
+button:hover 
+{
+    background-color: #ec3237;
+    color:#fff;
+    border: 1px solid #ec3237;
+
+
+}
